@@ -63,6 +63,8 @@ module GeminiAi
                    "https://generativelanguage.googleapis.com/#{service_version}/models/#{model}"
                  end
 
+      p base_url
+      
       params = {}
       params[:alt] = 'sse' if stream
       params[:key] = @api_key if @authentication == :api_key
