@@ -12,7 +12,7 @@ module GeminiAi
   class Client
     include GeminiAi::HTTP
 
-    CONFIG_KEYS = %i[ api_key region file_path version service ].freeze
+    CONFIG_KEYS = %i[ api_key region file_path version service project_id ].freeze
     attr_accessor :authentication, :authorizer, :project_id, :service_version
     attr_reader *CONFIG_KEYS, :faraday_middleware
 
