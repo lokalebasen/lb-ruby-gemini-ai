@@ -27,7 +27,7 @@ module GeminiAi
   end
 
   class Configuration
-    attr_writer :api_key, :region, :file_path, :version, :service
+    attr_writer :api_key, :region, :file_path, :version, :service, :project_id
     DEFAULT_SERVICE_VERSION = 'v1'.freeze
     DEFAULT_SERVICE = 'generative-language-api'.freeze
 
@@ -35,6 +35,7 @@ module GeminiAi
       @api_key = nil
       @region = nil
       @file_path = nil
+      @project_id = nil
       @version = DEFAULT_SERVICE_VERSION
       @service = DEFAULT_SERVICE
     end
@@ -61,6 +62,10 @@ module GeminiAi
     def region
       @region
     end
+
+    def project_id
+      @project_id
+    end  
 
   end
 
