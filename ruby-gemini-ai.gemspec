@@ -26,6 +26,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "event_stream_parser", ">= 0.3.0", "< 2.0.0"
   spec.add_dependency "faraday", ">= 1"
-  spec.add_dependency 'googleauth', '~> 1.8'
+  spec.add_dependency 'googleauth', '~> 0.9'
 
 end
