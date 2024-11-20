@@ -71,6 +71,7 @@ module GeminiAi
 
       uri = URI("#{base_url}:#{path}")
       uri.query = URI.encode_www_form(params) if params.present?
+      p uri.to_s
       uri.to_s
     end
 
