@@ -101,7 +101,7 @@ module GeminiAi
       elsif req.params["alt"]
         raise ArgumentError, "The alt parameter value must be a sse"
       end
-
+      p headers
       req.headers = headers
       req.body = req_parameters.to_json
     end
